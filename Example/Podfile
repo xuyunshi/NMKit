@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NMKit_Example' do
+  pod 'NMKit', :path => '../'
+
+  target 'NMKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

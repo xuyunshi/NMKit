@@ -1,0 +1,35 @@
+PODS:
+  - Kingfisher (4.8.1)
+  - MJRefresh (3.1.15.6)
+  - NMKit (0.1.0):
+    - Kingfisher
+    - MJRefresh (~> 3.1.10)
+    - SKPhotoBrowser
+    - SnapKit
+  - SKPhotoBrowser (5.1.0)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - NMKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - MJRefresh
+    - SKPhotoBrowser
+    - SnapKit
+
+EXTERNAL SOURCES:
+  NMKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
+  NMKit: 3c8d2c101ae4a2a54accc3a905c7e68d6986b2e7
+  SKPhotoBrowser: c20c1da34d737b4e3e101feead6c8dd92ebf860a
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 6cc52919821f50522ae2f7d7bce37e5df6f83a9b
+
+COCOAPODS: 1.5.3
