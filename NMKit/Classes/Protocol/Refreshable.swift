@@ -8,12 +8,12 @@
 
 import Foundation
 
-@objc protocol Refreshable: class {
+@objc public protocol Refreshable: class {
     func loadNewData()
     func loadMoreData()
 }
 
-extension NMKit where Base: UIScrollView {
+public extension NMKit where Base: UIScrollView {
     
     // TODO: 需要添加一个全局头部和尾部的功能
     // 以后再说吧

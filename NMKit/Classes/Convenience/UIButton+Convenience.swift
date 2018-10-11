@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension UIButton {
+public extension UIButton {
     convenience init(title: String, textColor: UIColor, size: CGFloat, fontType: UIFont.NMFontType) {
         self.init()
         setTitle(title, for: .normal)

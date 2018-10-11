@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension UIFont {
+public extension UIFont {
     enum NMFontType {
         case regular
         case medium

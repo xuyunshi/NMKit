@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NMKit where Base: UIApplication {
+public extension NMKit where Base: UIApplication {
     func topViewController() -> UIViewController {
         return topVCWithRootVC((base.keyWindow?.rootViewController)!)
     }

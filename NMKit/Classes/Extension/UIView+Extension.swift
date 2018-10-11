@@ -10,7 +10,7 @@ import SnapKit
 
 let kShadowContainerTag = 405029644
 
-extension UIView {
+public extension UIView {
     @IBInspectable var XIBCornerradius: CGFloat {
         set {
             layer.cornerRadius = newValue
@@ -41,7 +41,7 @@ extension UIView {
 
 extension UIView: NMKitCompatible {}
 
-extension NMKit where Base: UIView {
+public extension NMKit where Base: UIView {
     
     var shadowContainerView: UIView? {
         get {
@@ -102,7 +102,7 @@ extension NMKit where Base: UIView {
     }
 }
 
-struct ShadowModel {
+public struct ShadowModel {
     var offset: CGSize
     var radius: CGFloat
     var color: UIColor

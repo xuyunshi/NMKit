@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NMKit where Base: UITableView {
+public extension NMKit where Base: UITableView {
     func registerClass<T: UITableViewCell>(_ reusable: T.Type) {
         self.base.register(reusable.self, forCellReuseIdentifier: reusable.identifier)
     }
@@ -28,7 +28,7 @@ extension NMKit where Base: UITableView {
     }
 }
 
-extension NMKit where Base: UICollectionView {
+public extension NMKit where Base: UICollectionView {
     enum SectionElementType: String {
         case header
         case footer

@@ -9,7 +9,7 @@ import Foundation
 import Kingfisher
 import SKPhotoBrowser
 
-extension NMKit where Base: UIImageView {
+public extension NMKit where Base: UIImageView {
     func setImage(_ url: String) {
         self.base.kf.setImage(with: URL(string: url))
     }
@@ -39,7 +39,7 @@ extension NMKit where Base: UIImageView {
 var ScopeImageIndexKey: Void?
 var ScopeImageURLsKey: Void?
 
-extension UIImageView {
+public extension UIImageView {
     
     var scopeImageIndex: Int {
         get {

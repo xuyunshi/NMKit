@@ -98,6 +98,8 @@
 		883A6CDD5F2943C1FECD2FE6432C055A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A521D34F4CA92AB65DDFE044D10C965 /* SnapKit.framework */; };
 		88CE4EE02A104D4BD65DE024ACF209F7 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AD710832DFFBFB8771BBB76737DEB /* KingfisherOptionsInfo.swift */; };
 		892FEA85040CE39753E5A2891CB9921D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C65DF25BA80CBD10FBE89757A451C /* ConstraintMaker.swift */; };
+		8A2ACAD8216EE8C5004FBA0A /* NMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2ACAD7216EE8C5004FBA0A /* NMTextField.swift */; };
+		8A2ACADA216EEBE0004FBA0A /* NMDeviceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2ACAD9216EEBE0004FBA0A /* NMDeviceTool.swift */; };
 		8A3FDA64215C715F00B35B91 /* UILabel+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FDA63215C715F00B35B91 /* UILabel+Convenience.swift */; };
 		8A3FDA66215C718A00B35B91 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FDA65215C718A00B35B91 /* UIApplication+Extension.swift */; };
 		8A3FDA68215C73CF00B35B91 /* UIImageView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FDA67215C73CF00B35B91 /* UIImageView+Convenience.swift */; };
@@ -342,6 +344,8 @@
 		85E14E5003AD1FAD6B130CF6AEC279B7 /* Pods-NMKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8854D107CA48B0B01395064FFB123378 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		886819CEC0E81183086EA87F5D2EBE7E /* Pods_NMKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2ACAD7216EE8C5004FBA0A /* NMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMTextField.swift; sourceTree = "<group>"; };
+		8A2ACAD9216EEBE0004FBA0A /* NMDeviceTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMDeviceTool.swift; sourceTree = "<group>"; };
 		8A3FDA63215C715F00B35B91 /* UILabel+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Convenience.swift"; sourceTree = "<group>"; };
 		8A3FDA65215C718A00B35B91 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		8A3FDA67215C73CF00B35B91 /* UIImageView+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Convenience.swift"; sourceTree = "<group>"; };
@@ -754,6 +758,15 @@
 			path = NMKit/Classes/Base;
 			sourceTree = "<group>";
 		};
+		8A2ACAD6216EE89C004FBA0A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				8A2ACAD7216EE8C5004FBA0A /* NMTextField.swift */,
+				8A2ACAD9216EEBE0004FBA0A /* NMDeviceTool.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		91ED7293ADAB1A9387E329594B127DA7 /* Pods-NMKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -884,11 +897,12 @@
 			isa = PBXGroup;
 			children = (
 				7A6426B5DBC6438BF80BBF052C19FBCA /* header.h */,
+				8A2ACAD6216EE89C004FBA0A /* Class */,
 				81DE81BB44BFBEDA6FC7F40E86594DFF /* Base */,
 				A50FE2E96B0CBC37D060DE9DA6A4B2A3 /* Convenience */,
+				E8EAA05DA1E26212573B07BB04E4921B /* Protocol */,
 				FFD7F7B12F770D3D6284601191AFFA66 /* Extension */,
 				2F9A592D3CF3B91C586BF936309E074D /* Pod */,
-				E8EAA05DA1E26212573B07BB04E4921B /* Protocol */,
 				9EAA769EA88E4F91A73CCCB150551CFE /* Support Files */,
 			);
 			name = NMKit;
@@ -1368,6 +1382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2ACADA216EEBE0004FBA0A /* NMDeviceTool.swift in Sources */,
+				8A2ACAD8216EE8C5004FBA0A /* NMTextField.swift in Sources */,
 				64913BA558587EE83262E61B098EE919 /* ImageView+Extension.swift in Sources */,
 				3CD6B95D83E8C8E3900F90639DE43E6C /* NMKit-dummy.m in Sources */,
 				8A3FDA64215C715F00B35B91 /* UILabel+Convenience.swift in Sources */,

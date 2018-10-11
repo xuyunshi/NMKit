@@ -11,7 +11,7 @@ import Kingfisher
 var verticalImageTitleSpacingKey: Void?
 let NMImageTitleSpacingNone:CGFloat = 9999.9999
 
-extension NMKit where Base: UIButton {
+public extension NMKit where Base: UIButton {
     // 调整水平间距（图片,文字)
     func horizontalCenterImageAndTitlte(with spacing: CGFloat) {
         self.base.imageEdgeInsets = UIEdgeInsetsMake(0, -spacing, 0, 0)

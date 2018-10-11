@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Pageable: class {
+public protocol Pageable: class {
     
     associatedtype Element
     
@@ -23,7 +23,7 @@ protocol Pageable: class {
     func handlePage(with list: [Element])
 }
 
-extension Pageable {
+public extension Pageable {
     var maxCountPerPage:Int {
         get {
             return 10
@@ -31,7 +31,7 @@ extension Pageable {
     }
 }
 
-extension Pageable where Self: UIViewController {
+public extension Pageable where Self: UIViewController {
     
     func handlePage(with list: [Element]) {
         

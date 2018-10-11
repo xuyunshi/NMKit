@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NMKit where Base: UIColor {
+public extension NMKit where Base: UIColor {
     func colorWithAlpha(_ a: CGFloat)-> UIColor {
         var r: CGFloat = 0
         var g: CGFloat = 0

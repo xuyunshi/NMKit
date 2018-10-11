@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension UIAlertController {
+public extension UIAlertController {
     static func normalCheckAlertWithTitle(_ title: String, completion: @escaping (()->Void)) -> UIAlertController {
         let a = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         let a0 = UIAlertAction(title: "取消", style: .cancel, handler: nil)
