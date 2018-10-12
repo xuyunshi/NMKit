@@ -31,15 +31,19 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'NMKit/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'NMKit' => ['NMKit/Assets/*.png']
   # }
 
-   s.public_header_files = 'NMKit/Classes/header.h'
+#   s.public_header_files = 'NMKit/Classes/header.h'
+
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'MJRefresh', '~> 3.1.10'
    s.dependency 'SnapKit'
    s.dependency 'Kingfisher'
    s.dependency 'SKPhotoBrowser'
+   s.dependency 'MBProgressHUD'
+   
+   s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 end

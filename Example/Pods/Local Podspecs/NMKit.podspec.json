@@ -19,7 +19,6 @@
     "ios": "9.0"
   },
   "source_files": "NMKit/Classes/**/*",
-  "public_header_files": "NMKit/Classes/header.h",
   "dependencies": {
     "MJRefresh": [
       "~> 3.1.10"
@@ -32,6 +31,12 @@
     ],
     "SKPhotoBrowser": [
 
+    ],
+    "MBProgressHUD": [
+
     ]
+  },
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
   }
 }
