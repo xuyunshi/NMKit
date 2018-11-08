@@ -61,3 +61,5 @@ public extension NMKit where Base: StringProtocol {
         return Notification.Name(rawValue: String(self.base))
     }
 }
+
+extension String: NMKitCompatible {} 

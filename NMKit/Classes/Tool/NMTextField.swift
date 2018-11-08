@@ -10,10 +10,10 @@ import Foundation
 public class NMTextField: UITextField {
     
     /// 文字的左边距
-    @IBInspectable var leftMargin: CGFloat = 0.0
+    @IBInspectable public var leftMargin: CGFloat = 0.0
     
     /// 本属性请在其他属性设置完之后再设置
-    var placeHolderColor: UIColor? {
+    public var placeHolderColor: UIColor? {
         didSet {
             guard let c = placeHolderColor else { return }
             guard let p = placeholder else { return }
@@ -23,9 +23,9 @@ public class NMTextField: UITextField {
     }
     
     /// 左视图边距
-    var leftViewMargin: CGFloat = 0
+    public var leftViewMargin: CGFloat = 0
     
-    init() {
+    public init() {
         super.init(frame: .zero)
     }
     
